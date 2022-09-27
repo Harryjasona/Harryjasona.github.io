@@ -26,19 +26,33 @@
 <body>
     <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
     <div class="myWeek1">
-        <h1>Data Science for Economists.</h1>
+        <h1>Data Science for Economists</h1>
+        
+        <h3>Covid-19</h3>
+        <p>The first chart tracks Covid-19 cases by UK region.</p>
+        <ul>
+            <li> <div class="chart" id="Chart1"></div></li>
+        </ul>
+        <h3>Productivity puzzle</h3>
+        <p>My second chart examines labour productivity in the UK</p>
+        <ul>
+            <li><div class="chart" id="Chart2"> </div></li>
+        </ul>
+    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
+    <div class="myWeek1">
+        <h1>Additional Charts of Intrest</h1>
         
         <h3>Enviromental Economics</h3>
         <p>The top chart is displaying CO2 emissions in tonnes per capita globaly and for some of the worlds largest economies</p>
         <ul>
-                <li><div class="chart" id="Chart1"></div></li>
+                <li><div class="chart" id="Chart3"></div></li>
             </ul>
         <p>We can see in recent years there has been a global plateau in carbon emissions. </p>
         <p>A contibuting factor to this is likely due to economies such as the USA and the UK's reduction in carbon emission, with other countries like china keeping CO2 emmisions at fairly constant levels.</p>
         <h3>What's causing this plateau?</h3>
         <p>The second chart looks at global renewable engery generation in an over lapping time period</p>
         <ul>
-            <li><div class="chart" id="Chart2"> </div></li>
+            <li><div class="chart" id="Chart4"> </div></li>
         </ul>
         <p>Here we can see that since the early 2000's there has been a significant increase in renewable energy production. Where in March 2006 the G-8 Energy Ministerial meetings took place in Moscow and plans where outlined to advance clean energy sources like renwable energy and emissions free neclear power.</p>
         
@@ -48,12 +62,16 @@
 
 <script>
     //Define charts:
-    var myChart1 = "chart1_co2emissions.json";
-    var myChart2 = "chart2_renewables.json";
+    var myChart1 = "chart1_covidUKRegions.json";
+    var myChart2 = "chart2_ukProductivity.json";
+    var myChart3 = "chart3_co2emissions.json";
+    var myChart4 = "chart4_renewables.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
 </script>
 
 </html>
