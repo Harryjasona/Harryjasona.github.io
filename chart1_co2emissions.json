@@ -3,8 +3,8 @@
   "description": "Carbon per capita by country",
 
 "title": {
-    "text": "CO2 Emissions",
-    "subtitle":"Tonnes per capita. Source: Global Carbon Project",
+    "text": "CO2 Emissions - Source: Global Carbon Project",
+    "subtitle":"Tonnes per capita.",
     "subtitleFontStyle":"Arial",
     "subtitleFontSize":10,
     "anchor": "start",
