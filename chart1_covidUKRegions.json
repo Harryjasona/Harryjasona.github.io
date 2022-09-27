@@ -1,5 +1,5 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  
+
 "description": "Coronavirus cases",
 
 "data": {
@@ -40,7 +40,7 @@
   }
 },
 "transform": [
-  
+
   {"filter": {"selection": "Region"}},
   {
     "filter": {
@@ -58,19 +58,18 @@
     "field": "date", 
     "type": "temporal", 
     "title": null},
-  
+
   "y": {
     "field": "newCasesByPublishDate",
     "type": "quantitative",
     "title": null
   },
-  
-    
+
+
   "color": {
     "field": "areaName",
     "type": "nominal",
     "legend": null,
     "scale": {"scheme": "inferno"}
   }
-}
 }
