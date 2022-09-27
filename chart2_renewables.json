@@ -4,8 +4,8 @@
   "description": "US EIA chart",
 
   "title": {
-    "text": "Renewables - electricity generation",
-    "subtitle":"Billion kilowatthours generated. World, Annual. Source: US EIA",
+    "text": "Renewables - electricity generation - Source: US EIA",
+    "subtitle":"Billion kilowatthours generated. World, Annual.",
     "subtitleFontStyle":"Arial",
     "subtitleFontSize":10,
     "anchor": "start",
