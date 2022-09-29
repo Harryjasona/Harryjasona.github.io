@@ -17,7 +17,19 @@ body {
 }
 
 /* Choose the appearance of the tags, h1, h3 and p: */
-h1, h3, p{
+h1, h3{
+    color:rgb(255, 255, 255);
+    font-family: Arial;
+    text-align: center;
+        background-image: linear-gradient(
+          -45deg, 
+          rgba(59, 174, 227, 0.418) 0%, 
+          rgba(87, 111, 230, 0.308) 25%, 
+          rgba(152, 68, 183, 0.295) 51%, 
+          rgba(255, 53, 127, 0.247) 100%)
+}
+
+p{
     color:rgb(255, 255, 255);
     font-family: Arial;
     text-align: center;
@@ -36,6 +48,11 @@ ul {
     background-color: #122b39;
 }
 
+.chart{
+    background-color: #122b39;
+
+    
+}
 /* Set the apperance of the class, chart */
 
 
