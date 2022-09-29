@@ -1,12 +1,7 @@
 /* Richard Davies, Data Science for Economists */
-
 /* This is my first proper css file */
-
-
 /* Import a font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-
 /* Set the background color for my page: */
 body {
     width: 600px;
@@ -51,9 +46,6 @@ ul {
 .chart{
     background-color: #122b39;
 
-    
+
 }
 /* Set the apperance of the class, chart */
-
-
-    
