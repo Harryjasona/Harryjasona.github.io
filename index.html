@@ -41,16 +41,24 @@
         <p>Here we can see that since the early 2000s, there has been a significant increase in renewable energy production. In March 2006, the G-8 Energy Ministerial meetings took place in Moscow and plans were outlined to advance clean energy sources like renewable energy and emissions-free nuclear power.</p>
         
     </div> 
+    <div class='myWeek1'>
+        <h1>Week 2</h1>
+        <ul>
+            <li> <div class="chart" id="Chart3"></div> </li>
+        </ul>
+    </div>
 </body>
     
 <script>
     //Define charts:
     var myChart1 = "chart3_co2emissions.json";
     var myChart2 = "chart4_renewables.json";
+    var myChart3 = "imf_lending.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
 </script>
 
 </html>
