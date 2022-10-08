@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "US EIA chart",
+
+  "title": {
+    "text": "World GDP by IMF GRA Purchases",
+    "subtitle":"Dollar value of World GDP divided by IMF Lending",
+    "subtitleFontStyle":"Arial",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+  
+  "data":{"url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/GRA_Purchases_By_World_GDP.csv"},
+  "height": 300,
+  "width": 260,
+
+  "mark": {
+    "type": "bar",
+    "color": "#002FA7"},
+  
+  "encoding": {
+  
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "ticks": false
+      }
+    },
+
+    "y": {
+      "field": "gra_gdp",
+      "type": "quantitative",
+      "title": "",
+      "axis": {"grid": false}
+    }
+  }
+}
