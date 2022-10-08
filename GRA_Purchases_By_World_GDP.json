@@ -5,9 +5,8 @@
 
   "title": {
     "text": "World GDP by IMF GRA Purchases",
-    "subtitle":"Billion Dollar Value of World GDP Divided by IMF Lending",
+    "subtitle":"World GDP in Billions by IMF Lending",
     "subtitleFontStyle":"Arial",
-    "subtitleFontSize":8,
     "anchor": "start",
     "color": "black"
   },
