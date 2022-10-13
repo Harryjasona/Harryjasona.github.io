@@ -4,8 +4,8 @@
   "description": "US EIA chart",
 
   "title": {
-    "text": "World GDP by IMF GRA Purchases",
-    "subtitle":"World GDP in Billions by IMF Lending",
+    "text": "Global growth and IMF Lending",
+    "subtitle":"Ratio of World GDP ($) to IMF GRA Purchases ($)",
     "subtitleFontStyle":"Arial",
     "anchor": "start",
     "color": "black"
