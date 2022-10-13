@@ -4,7 +4,7 @@
   "description": "US EIA chart",
 
   "title": {
-    "text": "Global growth and IMF Lending",
+    "text": "Global GDP and IMF Lending",
     "subtitle":"Ratio of World GDP ($) to IMF GRA Purchases ($)",
     "subtitleFontStyle":"Arial",
     "anchor": "start",
