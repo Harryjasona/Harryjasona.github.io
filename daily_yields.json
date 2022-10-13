@@ -12062,6 +12062,13 @@
       {"Maturity": "2055-07-12", "Yield": 2.701615}
     ]
   },
+  "title": {
+    "text": "Interpolated Daily Guilt Strip Yields",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"},
+
   "mark": {"type": "bar", "color": "#002FA7"},
   "encoding": {
     "x": {"field": "Maturity", "type": "temporal", "axis": {"labelAngle": 0}},
