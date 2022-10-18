@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "US EIA chart",
+
+  "title": {
+    "text": "Cypriot Nationals in The UK",
+    "subtitle":"Break down of the number of Cypriot nationals living in the UK",
+    "subtitleFontStyle":"Arial",
+    "anchor": "start",
+    "color": "black"
+  },
+  
+  "data":{"url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/UK_Cypriots.csv"},
+  "height": 300,
+  "width": 260,
+  
+
+  "mark": {
+    "type": "bar",
+    "color": "#002FA7"},
+  
+  "encoding": {
+  
+    "x": {
+      "field": "Country",
+      "type": "nominal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "ticks": false
+      }
+    },
+
+    "y": {
+      "field": "Population of Cypriots",
+      "type": "quantitative",
+      "title": "",
+      "axis": {"grid": false}
+    }
+  }
+}
