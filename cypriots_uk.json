@@ -1,42 +1,17 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
-  "description": "US EIA chart",
-
-  "title": {
-    "text": "Cypriot Nationals in The UK",
-    "subtitle":"Source: Wikipedia",
-    "subtitleFontStyle":"Arial",
-    "anchor": "start",
-    "color": "black"
+  "description": "A simple donut chart with embedded data.",
+  "data": {
+    "values": [
+      {"UK Cypriots": "England", "value": 78795},
+      {"UK Cypriots": "Wales", "value": 1215},
+      {"UK Cypriots": "Scotland", "value": 1941},
+      {"UK Cypriots": "Ireland", "value": 344}
+    ]
   },
-  
-  "data":{"url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/UK_Cypriots.csv"},
-  "height": 300,
-  "width": 260,
-  
-
-  "mark": {
-    "type": "bar",
-    "color": "#002FA7"},
-  
+  "mark": {"type": "arc", "innerRadius": 50},
   "encoding": {
-  
-    "x": {
-      "field": "Country",
-      "type": "nominal",
-      "axis": {
-        "title": null,
-        "grid": false,
-        "ticks": false
-      }
-    },
-
-    "y": {
-      "field": "Population of Cypriots",
-      "type": "quantitative",
-      "title": "",
-      "axis": {"grid": false}
-    }
+    "theta": {"field": "value", "type": "quantitative"},
+    "color": {"field": "UK Cypriots", "type": "nominal"}
   }
 }
