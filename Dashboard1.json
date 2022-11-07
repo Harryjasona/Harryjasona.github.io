@@ -1,0 +1,13 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Google's stock price over time.",
+  "data": {"url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/dashboard1/ons_json_AHVR.json",
+  "format":{"property":"years"}},
+  
+  "mark": "line",
+  
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title":"PEN: BAL: Overseas corporate securities: Ordinary shares"},
+    "y": {"field": "value", "type": "quantitative"}
+  }
+}
