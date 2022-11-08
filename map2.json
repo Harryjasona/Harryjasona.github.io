@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width":700,
+  "height":500,
+
+  "data":{
+    "url":"https://raw.githubusercontent.com/martinjc/UK-GeoJSON/master/json/administrative/gb/lad.json",
+  "format":{
+    "property":"features"}},
+    "transform": [
+        {
+          "lookup":"properties.LAD13NM",
+          "from":{
+            "data":{
+              "url":"https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/maps2_data.csv"},
+              "key": "Local_authority_district_name",
+              "fields":["All_dwellings"]
+
+            }
+          }
+        ],
+
+        "mark": {
+      "type": "geoshape",
+      "strokeWidth":0.5},
+  "encoding": {
+    "color":{
+          "field":"All_dwellings",
+          "type": "quantitative"
+        },
+    "tooltip":[
+      {"field": "properties.LAD13NM", "title":" Local District Authority"},
+      {"field":"All_dwellings", "title":"Median Energy Efficiency Score 2022"}
+      ]
+  }
+}
