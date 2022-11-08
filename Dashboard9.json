@@ -1,0 +1,13 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Google's stock price over time.",
+  "data": {"url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/dashboard1/ons_json_RKEN.json",
+  "format":{"property":"years"}},
+  
+  "mark": "line",
+  
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title":"INS: LT: EXP: Total claims incurred: Overseas"},
+    "y": {"field": "value", "type": "quantitative", "title":"£Millions"}
+  }
+}
