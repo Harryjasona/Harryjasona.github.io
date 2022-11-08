@@ -7,7 +7,7 @@
   "mark": "line",
   
   "encoding": {
-    "x": {"field": "date", "type": "temporal"},
-    "y": {"field": "value", "type": "quantitative", "title":"Other assets: UK & overseas"}
+    "x": {"field": "date", "type": "temporal", "title":"Other assets: UK & overseas"},
+    "y": {"field": "value", "type": "quantitative","title":"£Millions" }
   }
 }
