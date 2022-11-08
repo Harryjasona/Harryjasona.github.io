@@ -74,5 +74,5 @@
   "encoding": {
     "x": {"field": "Maturity", "type": "temporal", "axis": {"labelAngle": 0}},
     "y": {"field": "Yield", "type": "quantitative", "scale": {"domain": [2.5, 4]}}
-  },
+  }
 }
