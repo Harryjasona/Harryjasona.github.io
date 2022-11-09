@@ -13,6 +13,6 @@
   "encoding": {
     "theta": {"field": "value", "type": "quantitative"},
     "color": {"field": "UK Cypriots", "type": "nominal"},
-    "tooltip":{"field": "value", "title": "Harry"}
+    "tooltip":{"field": "value", "title": "Number of Cypriots"}
     }
 }
