@@ -12070,7 +12070,7 @@
     "anchor": "start",
     "color": "black"},
 
-  "mark": {"type": "bar", "color": "#002FA7"},
+  "mark": {"type": "line", "color": "#002FA7"},
   "encoding": {
     "x": {"field": "Maturity", "type": "temporal", "axis": {"labelAngle": 0}},
     "y": {"field": "Yield", "type": "quantitative"}
