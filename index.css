@@ -77,12 +77,6 @@ ul {
   touch-action: manipulation;
   width: 100%;
   will-change: transform;
-  background-image: linear-gradient(
-        -45deg, 
-       rgba(59, 174, 227, 0.418) 0%, 
-       rgba(87, 111, 230, 0.308) 25%, 
-       rgba(152, 68, 183, 0.295) 51%, 
-       rgba(255, 53, 127, 0.247) 100%)
 }
 
 .button-27:disabled {
