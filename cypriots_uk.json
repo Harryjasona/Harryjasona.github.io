@@ -12,6 +12,7 @@
   "mark": {"type": "arc", "innerRadius": 50},
   "encoding": {
     "theta": {"field": "value", "type": "quantitative"},
-    "color": {"field": "UK Cypriots", "type": "nominal"}
-  }
+    "color": {"field": "UK Cypriots", "type": "nominal"},
+    "tooltip":{"field": "value", "title": "Harry"}
+    }
 }
