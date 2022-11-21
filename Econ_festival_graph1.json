@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "JP Morgan Chase & Co. Total EXEC./SR. Lvl Diveristy",
+  "data": {
+    "values": [
+      {"ethinicty": "White", "value": 79},
+      {"ethinicty": "Asian", "value": 10},
+      {"ethinicty": "Black", "value": 5},
+      {"ethinicty": "Hispanic", "value": 5},
+      {"ethinicty": "Other", "value": 1}
+    ]
+  },
+  "title": {
+    "text": "JP Morgan Chase & Co. Total EXEC./SR. Lvl Diveristy",
+    "subtitle": "Source: jpmorganchase.com",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "mark": {"type": "arc", "innerRadius": 50},
+  "encoding": {
+    "theta": {"field": "value", "type": "quantitative"},
+    "color": {"field": "ethinicty", "type": "nominal"},
+    "tooltip": {"field": "ethinicty", "title": "Number of Cypriots"}
+  }
+}
