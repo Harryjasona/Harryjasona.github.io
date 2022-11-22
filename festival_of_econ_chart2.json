@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "JP Morgan Chase & Co. Total EXEC./SR. Lvl Diveristy",
+  "data": { "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/US_Unemployment_by_race.csv"
+  },
+  "title": {
+    "text": "Unemployment Rate By Ethnicity ",
+    "subtitle": "Source: BLS Reports",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "color": "black"
+  },
+  "mark": {"type": "bar"},
+  "encoding":{    "color": {"field": "Race", "type": "nominal"},
+    "tooltip": {"field": " Percent", "title": "(%)"},
+    "x": {"field": "Race", "type": "nominal", "axis": {"labelAngle": 45}, "title": "Ethnicity"},
+    "y": {"field": " Percent", "type": "quantitative","title": "Percentage (%)"}
+  }
+}
