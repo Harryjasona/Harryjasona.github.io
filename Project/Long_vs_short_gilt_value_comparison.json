@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {"category":"Short Duration Bond", "YoY Changes": "2021 Value", "value":1859},
+      {"category":"Short Duration Bond", "YoY Changes": "2022 Value", "value":1168},
+      {"category":"Long Duration Bond", "YoY Changes": "2021 Value", "value":1136},
+      {"category":"Long Duration Bond", "YoY Changes": "2022 Value", "value":665},
+    ]
+  },
+  "title": {
+    "text": "Wealth Destruction From Rising Interest Rates",
+    "subtitle": "Long duration gilts fell in value a further 4.3% than shorter duration gilts",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "color": "black"},
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "category","axis": {"labelAngle": 45},"title":"Short Vs Long Duration Gilts"},
+    "y": {"field": "value", "type": "quantitative", "title":"Value"},
+    "xOffset": {"field": "YoY Changes"},
+    "color": {"field": "YoY Changes"}
+  }
+}
+
