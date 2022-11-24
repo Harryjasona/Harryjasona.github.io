@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/Gilts%20Sensitivity%20Model%20.csv", "format":{"type": "csv"}
+  },
+  "repeat": {
+    "layer": ["Rebased_High", "Rebased_Low", "rebased_High_yield_no_principal","rebased_High_principal_low_yield"]
+  },
+  "spec": {
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "bin": true,
+        "field": "Intrest Rate (1%)",
+        "type": "quantitative"
+      },
+      "y": {
+        "aggregate": "mean",
+        "field": {"repeat": "layer"},
+        "type": "quantitative",
+        "title": "Mean of US and Worldwide Gross"
+      },
+      "color": {
+        "datum": {"repeat": "layer"},
+        "type": "nominal"
+      }
+    }
+  }
+}
