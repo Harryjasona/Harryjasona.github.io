@@ -4,21 +4,28 @@
     "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/Gilts%20Sensitivity%20Model%20.csv", "format":{"type": "csv"}
   },
   "repeat": {
-    "layer": ["Rebased_High", "Rebased_Low", "rebased_High_yield_no_principal","rebased_High_principal_low_yield"]
+    "layer": ["4% Coupon Rate", "1% Coupon Rate", "High Yield (8%) No Principal","High Principal (2000) Low Yield (1%)"]
   },
+  "title":{
+    "text":"Displaying Debt Instruments Sensitivity To Duration ",
+    "subtitle":"Demonstrating how intrest rates changes affect bonds of diffrent durations"
+  },
+  "height": 300,
+  "width": 300, 
   "spec": {
     "mark": "line",
     "encoding": {
       "x": {
         "bin": true,
         "field": "Intrest Rate (1%)",
+        "title":"Intrest Rate (%)",
         "type": "quantitative"
       },
       "y": {
         "aggregate": "mean",
         "field": {"repeat": "layer"},
         "type": "quantitative",
-        "title": "Mean of US and Worldwide Gross"
+        "title": "Indexed Value"
       },
       "color": {
         "datum": {"repeat": "layer"},
