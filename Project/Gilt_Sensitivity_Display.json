@@ -25,7 +25,7 @@
         "aggregate": "mean",
         "field": {"repeat": "layer"},
         "type": "quantitative",
-        "title": "Indexed Value"
+        "title": "Indexed Value (£)"
       },
       "color": {
         "datum": {"repeat": "layer"},
