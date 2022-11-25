@@ -17,7 +17,7 @@
   "mark": "bar",
   "encoding": {
     "x": {"field": "category","axis": {"labelAngle": 45},"title":"Short Vs Long Duration Gilts"},
-    "y": {"field": "value", "type": "quantitative", "title":"Value"},
+    "y": {"field": "value", "type": "quantitative", "title":"Value (£)"},
     "xOffset": {"field": "YoY Changes"},
     "color": {"field": "YoY Changes"}
   }
