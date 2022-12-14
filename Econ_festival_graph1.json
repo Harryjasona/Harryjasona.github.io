@@ -22,6 +22,6 @@
   "encoding": {
     "theta": {"field": "value", "type": "quantitative"},
     "color": {"field": "ethinicty", "type": "nominal"},
-    "tooltip": {"field": "ethinicty", "title": "Number of Cypriots"}
+    "tooltip": {"field": "value", "title": "Percentage of Ethinity"}
   }
 }
