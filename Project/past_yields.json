@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/Past_Yields.csv"
+  },
+  "repeat": {
+    "layer": [
+      "5 Year", "10 Year", "30 Year"
+    ]
+  },
+  "title": {
+    "text": "The Future of Interest Rates",
+    "subtitle": "Demonstrating what the market perceives UK interest rates to be in 5 years time over the last year "
+  },
+  "spec": {
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "Month", "title": "Intrest Rate (%)", "type": "temporal"},
+      "y": {
+        "aggregate": "mean",
+        "field": {"repeat": "layer"},
+        "type": "quantitative",
+        "title": "Indexed Value (£)"
+      },
+      "color": {"datum": {"repeat": "layer"}, "type": "nominal"},
+      "tooltip": {"field": {"repeat": "layer"}}
+    }
+  }
+}
