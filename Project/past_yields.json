@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/Past_Yields.csv"
+    "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/monthly%20average%20gilt%20yields.json"
   },
   "repeat": {
     "layer": [
@@ -9,13 +9,13 @@
     ]
   },
   "title": {
-    "text": "The Future of Interest Rates",
-    "subtitle": "Demonstrating what the market perceives UK interest rates to be in 5 years time over the last year "
+    "text": "Historical Average Daily Conventional Gilt Yields",
+    "subtitle": "calculated at benchmark maturities on a monthly basis since April 1998, Source: DMO.gov.uk"
   },
   "spec": {
     "mark": "line",
     "encoding": {
-      "x": {"field": "Month", "title": "Intrest Rate (%)", "type": "temporal"},
+      "x": {"field": "Month", "title": "Intrest Rate (%)", "type": "temporal", "aggregate": {"argmax": "Month"}},
       "y": {
         "aggregate": "mean",
         "field": {"repeat": "layer"},
@@ -24,6 +24,8 @@
       },
       "color": {"datum": {"repeat": "layer"}, "type": "nominal"},
       "tooltip": {"field": {"repeat": "layer"}}
+      
+      
     }
   }
 }
