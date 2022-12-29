@@ -1,5 +1,5 @@
 {
-"title": {
+  "title": {
     "text": "Wealth Destruction From Rising Interest Rates",
     "subtitle": "Long duration gilts fell in value a further 4.3% than shorter duration gilts",
     "subtitleFontStyle": "italic",
@@ -9,23 +9,19 @@
   "data": {
     "values": [
       {
-        "category": "Long Duration Bond",
-        "YoY Changes": "2021 Value",
+        "category": "Long Duration Bond 2021 Value",
         "value": 1859
       },
       {
-        "category": "Long Duration Bond",
-        "YoY Changes": "2022 Value",
+        "category": "Long Duration Bond 2022 Value",
         "value": 1168
       },
       {
-        "category": "Short Duration Bond",
-        "YoY Changes": "2021 Value",
+        "category": "Short Duration Bond 2021 Value",
         "value": 1136
       },
       {
-        "category": "Short Duration Bond",
-        "YoY Changes": "2022 Value",
+        "category": "Short Duration Bond 2022 Value",
         "value": 665
       }
     ]
@@ -33,15 +29,19 @@
   "width": "600",
   "height": "400",
   "encoding": {
-    "x": {"field": "category", "type": "nominal", "axis": {"labelAngle": 45},
-      "title": "Short Vs Long Duration Gilts"},
-    "y": {"field": "value", "type": "quantitative","title": "Value (£)"}
+    "x": {
+      "field": "category",
+      "type": "nominal",
+      "axis": {"labelAngle": 45},
+      "title": "Short Vs Long Duration Gilts"
+    },
+    "y": {"field": "value", "type": "quantitative", "title": "Value (£)"}
   },
   "layer": [
     {
       "mark": "bar",
       "encoding": {
-        "color": {"field": "YoY Changes"},
+        "color": {"field": "category"},
         "opacity": {
           "condition": {"selection": "series", "value": 1},
           "value": 0.2
