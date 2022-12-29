@@ -9,13 +9,14 @@
           "feature": "countries1"}
   },
   "title": {
-      "text": "The Base Map",
-      "subtitle": " United Kingdom By Local District Authorities, Source: Github - martinjc",
+      "text": "End of 2022 Global Intrest Rates",
+      "subtitle": "A Global Persepctive on Intrest Rates, Source: Trading Economics, deldersveld ",
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 10,
       "anchor": "start",
       "color": "black"
     },
+
    "transform": [
     {
       "lookup": "properties.name",
