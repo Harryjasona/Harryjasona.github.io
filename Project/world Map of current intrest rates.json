@@ -6,16 +6,16 @@
     "url": "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json",
     "format": {
           "type": "topojson",
-          "feature": "countries1"},
-    "title": {
+          "feature": "countries1"}
+  },
+  "title": {
       "text": "The Base Map",
       "subtitle": " United Kingdom By Local District Authorities, Source: Github - martinjc",
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 10,
       "anchor": "start",
       "color": "black"
-    }
-  },
+    },
    "transform": [
     {
       "lookup": "properties.name",
@@ -43,6 +43,6 @@
   "encoding": {"color": {
       "field": "Last",
       "type": "quantitative"
-    }, "tooltip": [{"field": "properties.name","field": "Last",
-        "title": "Median Energy Efficiency Score 2022"}]}
+    }, "tooltip": [{"field": "properties.name", "title": "Country"},{"field": "Last",
+        "title": "Intrest Rate Dec 2022"}]}
 }
