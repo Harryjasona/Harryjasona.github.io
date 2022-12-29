@@ -3,7 +3,7 @@
   "description": "Various US measures state by state",
   "title": {
     "text": "Monthly Bond Changes and Sentiment",
-    "subtitle": "Analsying the relationship between the FT's sentiment regarding the key phrase 'Gilts' and gilt yeild changes MoM",
+    "subtitle": "Analsying the relationship between the FT's sentiment regarding the key phrase 'Gilts' and gilt yield changes MoM",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
