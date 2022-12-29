@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json",
+    "format": {
+          "type": "topojson",
+          "feature": "countries1"},
+    "title": {
+      "text": "The Base Map",
+      "subtitle": " United Kingdom By Local District Authorities, Source: Github - martinjc",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    }
+  },
+   "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/intrest_rate_bu_country.csv"
+        },
+        "key": "Country",
+        "fields": ["Last"]
+      }
+    }
+  ],
+  "projection": {
+    "type": "naturalEarth1"},
+    
+  "config": {
+  "background":"white",
+  "view": {"stroke": "transparent"}},
+
+  "mark": {
+    "type": "geoshape",
+    "stroke": "black",
+    "strokeWidth":0.1},
+  
+  "encoding": {"color": {
+      "field": "Last",
+      "type": "quantitative"
+    }, "tooltip": [{"field": "properties.name","field": "Last",
+        "title": "Median Energy Efficiency Score 2022"}]}
+}
