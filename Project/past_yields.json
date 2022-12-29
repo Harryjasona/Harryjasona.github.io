@@ -24,8 +24,6 @@
       },
       "color": {"datum": {"repeat": "layer"}, "type": "nominal"},
       "tooltip": {"field": {"repeat": "layer"}}
-      
-      
     }
   }
 }
