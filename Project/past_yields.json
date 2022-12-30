@@ -3,37 +3,55 @@
   "data": {
     "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/Yields%20and%20Price.csv"
   },
-  "repeat": {
-    "layer": [
-      "5 Year Yields",
-      "10 Year Yields",
-      "30 Year Yields",
-      "50 Year Yields",
-      "Gilt Portfolio ETF Price",
-      "Interest Rate Absoutle"
-    ]
-  },
-  "title": {
-    "text": "Conventional Gilt Yields Across Maturaties and Core Gilt ETF Price ",
-    "subtitle": "Showing the 'one-for-one' relationship between Yields and Price, Source: DMO.gov.uk and Yahoo Finance"
-  },
-  "spec": {
-    "mark": "line",
-    "encoding": {
-      "x": {
-        "field": "Month",
-        "title": "",
-        "type": "temporal",
-        "aggregate": {"argmax": "Month"}
-      },
-      "y": {
-        "aggregate": "mean",
-        "field": {"repeat": "layer"},
-        "type": "quantitative",
-        "title": "Yields (%), ETF Price (£)"
-      },
-      "color": {"datum": {"repeat": "layer"}, "type": "nominal"},
-      "tooltip": {"field": {"repeat": "layer"}}
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {"field": "Month", "type": "temporal"},
+        "y": {"field": "5 Year Yields", "type": "quantitative", "axis": {"orient": "left"},  "title": ""},
+        "color": {"datum": "5 Year Yields", "type": "nominal"}
+        
+      }
+    },
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {"field": "Month", "type": "temporal"},
+        "y": {"field": "10 Year Yields", "type": "quantitative", "axis": {"orient": "left"},  "title": ""},
+        "color": {"datum": "10 Year Yields", "type": "nominal"}
+      }
+    },
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {"field": "Month", "type": "temporal"},
+        "y": {"field": "30 Year Yields", "type": "quantitative", "axis": {"orient": "left"}, "title": ""},
+        "color": {"datum": "30 Year Yields", "type": "nominal"}
+      }
+    },
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {"field": "Month", "type": "temporal"},
+        "y": {"field": "50 Year Yields", "type": "quantitative", "title": "", "axis": {"orient": "left"}},
+        "color": {"datum": "50 Year Yields", "type": "nominal"}
+      }
+    },
+        {
+      "mark": "line",
+      "encoding": {
+        "x": {"field": "Month", "type": "temporal"},
+        "y": {"field": "Gilt Portfolio ETF Price", "type": "quantitative", "axis": {"orient": "left"}},
+        "color": {"datum": "Gilt Portfolio ETF Price", "type": "nominal"}
+      }
+    },
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {"field": "Month", "type": "temporal"},
+        "y": {"field": "Interest Rate Absoutle", "type": "quantitative", "axis": {"orient": "right"}},
+        "color": {"datum": "Interest Rate Absoutle", "type": "nominal"}
+      }
     }
-  }
+  ]
 }
