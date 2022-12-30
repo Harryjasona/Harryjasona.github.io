@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/Yields%20and%20Price.csv"
+  },
+  "repeat": {"layer": ["5 Year Yields", "10 Year Yields", "30 Year Yields", "50 Year Yields", "Gilt Portfolio ETF Price"]},
+  "title": {
+    "text": "Conventional Gilt Yields Across Maturaties and Core Gilt ETF Price ",
+    "subtitle": "Showing the 'one-for-one' relationship between Yields and Price, Source: DMO.gov.uk and Yahoo Finance"
+  },
+  "height": 400,
+  "width":400,
+  "spec": {
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Month",
+        "title": "",
+        "type": "temporal",
+      },
+      "y": {
+        "aggregate": "mean",
+        "field": {"repeat": "layer"},
+        "type": "quantitative",
+        "title": "Yields (%), ETF Price (£)",
+        "axis": {
+                "orient": "left",
+                "format": "s"}
+      },
+
+      "color": {"datum": {"repeat": "layer"}, "type": "nominal"},
+      "tooltip": {"field": {"repeat": "layer"}}
+
+    },
+    "layer": [
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Month",
+        "title": "",
+        "type": "temporal",
+        "aggregate": {"argmax": "Month"}
+      },
+      "y": {
+        "aggregate": "mean",
+        "field": "Interest Rate Absoutle",
+        "type": "quantitative",
+        "title": "Yields (%), ETF Price (£)",
+        "axis": {
+                "orient": "right",
+                "format": "s"}
+          }],
+  "resolve": {"scale": {"y": "independent"}}
+}
