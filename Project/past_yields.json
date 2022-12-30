@@ -1,26 +1,27 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/monthly%20average%20gilt%20yields.json"
+    "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/Yields%20and%20Price.csv"
   },
-  "repeat": {
-    "layer": [
-      "5 Year", "10 Year", "30 Year"
-    ]
-  },
+  "repeat": {"layer": ["5 Year Yields", "10 Yields", "30 Yields", "50 Yields", "Gilt Portfolio ETF Price"]},
   "title": {
-    "text": "Historical Average Daily Conventional Gilt Yields",
-    "subtitle": "calculated at benchmark maturities on a monthly basis since April 1998, Source: DMO.gov.uk"
+    "text": "Conventional Gilt Yields Across Maturaties and Core Gilt ETF Price ",
+    "subtitle": "Showing the 'one-for-one' relationship between Yields and Price, Source: DMO.gov.uk and Yahoo Finance"
   },
   "spec": {
     "mark": "line",
     "encoding": {
-      "x": {"field": "Month", "title": "Intrest Rate (%)", "type": "temporal", "aggregate": {"argmax": "Month"}},
+      "x": {
+        "field": "Month",
+        "title": "",
+        "type": "temporal",
+        "aggregate": {"argmax": "Month"}
+      },
       "y": {
         "aggregate": "mean",
         "field": {"repeat": "layer"},
         "type": "quantitative",
-        "title": "Indexed Value (£)"
+        "title": "Yields (%), ETF Price (£)"
       },
       "color": {"datum": {"repeat": "layer"}, "type": "nominal"},
       "tooltip": {"field": {"repeat": "layer"}}
