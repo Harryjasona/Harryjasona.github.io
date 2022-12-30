@@ -5,6 +5,7 @@ body {
     background-color: #122b39;
     padding: 0 20px 20px 20px;
     border: 5px solid rgb(255, 255, 255);
+    text-align: center;
 }
 h1, h3{
     color:rgb(255, 255, 255);
@@ -55,7 +56,6 @@ ul {
  <!-- HTML !-->
 <button class="button-27" role="button">Button 27</button>
   width: fit-content;
-  text-align: center;
   appearance: none;
   background-color: #000000;
   border: 2px solid #1A1A1A;
