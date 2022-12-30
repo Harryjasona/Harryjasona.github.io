@@ -1,44 +1,43 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width":500,
-  "height":400,
-
-  "data":{
-    "url":"https://raw.githubusercontent.com/martinjc/UK-GeoJSON/master/json/administrative/gb/lad.json",
-    "title": {
-    "text": "The Choropleth",
-    "subtitle": "Showing Median Energy Efficiency Scores in 2022 for Local District Authorities, Source: ONS",
-    "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
-    "anchor": "start",
-    "color": "black"
+  "width": 500,
+  "height": 400,
+  "title": {
+      "text": "The Choropleth",
+      "subtitle": "Showing Median Energy Efficiency Scores in 2022 for Local District Authorities, Source: ONS",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+  "data": {
+    "url": "https://raw.githubusercontent.com/martinjc/UK-GeoJSON/master/json/administrative/gb/lad.json",
+    "format": {"property": "features"}
   },
-  "format":{
-    "property":"features"}},
-    "transform": [
-        {
-          "lookup":"properties.LAD13NM",
-          "from":{
-            "data":{
-              "url":"https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/maps2_data.csv"},
-              "key": "Local_authority_district_name",
-              "fields":["Median Energy Efficiency Score 2022"]
-
-            }
-          }
-        ],
-
-        "mark": {
-      "type": "geoshape",
-      "strokeWidth":0.5},
-  "encoding": {
-    "color":{
-          "field":"Median Energy Efficiency Score 2022",
-          "type": "quantitative"
+  "transform": [
+    {
+      "lookup": "properties.LAD13NM",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/maps2_data.csv"
         },
-    "tooltip":[
-      {"field": "properties.LAD13NM", "title":" Local District Authority"},
-      {"field":"Median Energy Efficiency Score 2022", "title":"Median Energy Efficiency Score 2022"}
-      ]
+        "key": "Local_authority_district_name",
+        "fields": ["Median Energy Efficiency Score 2022"]
+      }
+    }
+  ],
+  "mark": {"type": "geoshape", "strokeWidth": 0.5},
+  "encoding": {
+    "color": {
+      "field": "Median Energy Efficiency Score 2022",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {"field": "properties.LAD13NM", "title": " Local District Authority"},
+      {
+        "field": "Median Energy Efficiency Score 2022",
+        "title": "Median Energy Efficiency Score 2022"
+      }
+    ]
   }
 }
