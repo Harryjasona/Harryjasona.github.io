@@ -1,55 +1,57 @@
-{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
-    "title": {
-      "text": "Intrest Rates and Bond Market Size",
-      "subtitle":["Market Size  in Mln USD, Source: Trading Economics and Cbonds"],
-      "subtitleFontStyle":"italic",
-      "subtitleFontSize":10,
-      "anchor": "start",
-      "color": "black"
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Intrest Rates and Bond Market Size Bubble Chart",
+    "subtitle": [
+      "Market size in mln USD, Source: Trading Economics and Cbonds"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {"background": "white", "view": {"stroke": "transparent"}},
+  "data": {
+    "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Interest_rate_bond_market_g20.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {"type": "point", "color": "blue", "opacity": 0.7},
+  "height": 200,
+  "width": 400,
+  "encoding": {
+    "x": {
+      "field": "Country",
+      "type": "nominal",
+      "axis": {"grid": false},
+      "title": null
     },
-
-  "config": {
-    "background":"white",
-    "view": {
-      "stroke": "transparent"}},
-  
-    "data": {
-      "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Interest_rate_bond_market_g20.csv",
-      "format":{"type":"csv"}},
-    "mark": {
-      "type":"point",
-      "color":"blue",
-      "opacity":0.7},
-    
-    "height": 200,
-    "width": 400,
-  
-    "encoding": {
-      "x": {
-        "field": "Country", 
-        "type": "nominal",
-        "axis":{"grid": false},
-        "title":null},
-  
-      "y": {
-        "field": "Interest _Rate", 
+    "y": {
+      "field": "Interest _Rate",
+      "type": "quantitative",
+      "scale": {"domain": [-2, 15]},
+      "axis": {"grid": false},
+      "title": null
+    },
+    "size": {
+      "field": "Bond_Markey_Value_USD",
+      "type": "quantitative",
+      "title": "Prison Rate",
+      "scale": {"range": [100, 8000]},
+      "legend": null
+    },
+    "tooltip": [
+      {"field": "Country", "type": "ordinal", "title": "Country"},
+      {
+        "field": "Interest _Rate",
+        "type": "ordinal",
+        "title": "Interest Rate (%)"
+      },
+      {
+        "field": "Bond_Markey_Value_USD",
         "type": "quantitative",
-        "scale": { "domain": [-2, 15]},
-        "axis":{"grid": false},
-        "title":null},
-  
-      "size": {
-        "field": "Bond_Markey_Value_USD", 
-        "type": "quantitative",
-        "title":"Prison Rate",
-        "scale": { "range": [100, 8000]},
-        "legend":null},
-
-      "tooltip":[
-        {"field":"Country", "type": "ordinal", "title":"Country"},
-        {"field":"Interest _Rate", "type": "ordinal", "title":"Interest Rate (%)"},
-        {"field":"Bond_Markey_Value_USD", "type": "quantitative", "title":"Market Value Mln USD", "format":".2f"}
-      ]
-     }
+        "title": "Market Value Mln USD",
+        "format": ".2f"
+      }
+    ]
   }
+}
