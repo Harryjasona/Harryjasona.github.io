@@ -3,7 +3,15 @@
   "data": {
     "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/Yields%20and%20Price.csv"
   },
-  "repeat": {"layer": ["5 Year Yields", "10 Yields", "30 Yields", "50 Yields", "Gilt Portfolio ETF Price"]},
+  "repeat": {
+    "layer": [
+      "5 Year Yields",
+      "10 Year Yields",
+      "30 Year Yields",
+      "50 Year Yields",
+      "Gilt Portfolio ETF Price"
+    ]
+  },
   "title": {
     "text": "Conventional Gilt Yields Across Maturaties and Core Gilt ETF Price ",
     "subtitle": "Showing the 'one-for-one' relationship between Yields and Price, Source: DMO.gov.uk and Yahoo Finance"
