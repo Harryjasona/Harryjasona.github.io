@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/GBPIRSB5Y%3D%20Overview.csv"},
+  "repeat": {
+    "layer": ["5 Year Swaptions Price", "5 Year Gilt Yeilds", "Swaptions Premium "]
+  },
+  "title":{
+    "text":"The Future of Interest Rates",
+    "subtitle":"Demonstrating what the market perceives UK interest rates to be in 5 years time over the last year, Source: Investing.com"
+  },
+  "height": 300,
+  "width": 300, 
+  "spec": {
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Date",
+        "title":"Intrest Rate (%)",
+        "type": "temporal"
+      },
+      "y": {
+        "aggregate": "mean",
+        "field": {"repeat": "layer"},
+        "type": "quantitative",
+        "title": "Indexed Value (£)",
+        "scale": {"domain": [-1, 6]}
+      },
+      "color": {
+        "datum": {"repeat": "layer"},
+        "type": "nominal"
+      },
+      "tooltip": {"field": {"repeat": "layer"}}
+    }
+  }
+}
