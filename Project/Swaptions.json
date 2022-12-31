@@ -1,36 +1,45 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/GBPIRSB5Y%3D%20Overview.csv"},
-  "repeat": {
-    "layer": ["5 Year Swaptions Price", "5 Year Gilt Yeilds", "Swaptions Premium "]
+    "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/GBPIRSB5Y%3D%20Overview.csv"
   },
-  "title":{
-    "text":"The Future of Interest Rates",
-    "subtitle":"Demonstrating what the market perceives UK interest rates to be in 5 years time over the last year, Source: Investing.com"
+  "title": {
+    "text": "The Future of Interest Rates",
+    "subtitle": "Demonstrating what the market perceives UK interest rates to be in 5 years from Nov 2021 to Dec 2022, Source: Investing.com"
   },
   "height": 300,
-  "width": 300, 
-  "spec": {
-    "mark": "line",
-    "encoding": {
-      "x": {
-        "field": "Date",
-        "title":"Intrest Rate (%)",
-        "type": "temporal"
-      },
-      "y": {
-        "aggregate": "mean",
-        "field": {"repeat": "layer"},
-        "type": "quantitative",
-        "title": "Indexed Value (£)",
-        "scale": {"domain": [-1, 6]}
-      },
-      "color": {
-        "datum": {"repeat": "layer"},
-        "type": "nominal"
-      },
-      "tooltip": {"field": {"repeat": "layer"}}
+  "width": 300,
+  "concat": [
+    {
+      "height": 400,
+      "width": 50,
+      "mark": {"type": "text", "fill": "lightgray"},
+      "params": [
+        {"name": "brush", "select": {"type": "interval", "encodings": ["y"]}}
+      ],
+      "encoding": {
+        "y": {"field": "Date", "type": "temporal", "sort": "-x", "title":"Date Range Selector"},
+        "x": {
+          "field": "5 Year Swaptions Price",
+          "type": "quantitative",
+          "axis": {"tickCount": 0.1, "grid": false},
+          "title":""
+        }
+      }
+    },
+    {
+      "height": 400,
+      "width": 480,
+      "mark": "line",
+      "encoding": {
+        "y": {
+          "field": "5 Year Swaptions Price",
+          "type": "quantitative",
+          "axis": {"title": ""}
+        },
+        "x": {"field": "Date", "type": "temporal", "scale": {"domain": {"param": "brush"}}}
+        
+      }
     }
-  }
+  ]
 }
