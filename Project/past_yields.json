@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/Yields%20and%20Price.csv"
   },
-  "concat": [
+  "hconcat": [
     {
       "height": 400,
       "width": 50,
