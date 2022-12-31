@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/Yields%20and%20Price.csv"
+  },
+  "height":400,
+  "width":400,
+  "layer": [
+    { 
+      "mark": "line",
+      "encoding": {
+        "x": {"field": "Month", "type": "temporal"},
+        "y": {"field": "5 Year Yields", "type": "quantitative", "axis": {"orient": "left"},  "title": ""},
+        "color": {"datum": "5 Year Yields", "type": "nominal"}
+        
+      }
+    },
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {"field": "Month", "type": "temporal"},
+        "y": {"field": "10 Year Yields", "type": "quantitative", "axis": {"orient": "left"},  "title": ""},
+        "color": {"datum": "10 Year Yields", "type": "nominal"}
+      }
+    },
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {"field": "Month", "type": "temporal"},
+        "y": {"field": "30 Year Yields", "type": "quantitative", "axis": {"orient": "left"}, "title": ""},
+        "color": {"datum": "30 Year Yields", "type": "nominal"}
+      }
+    },
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {"field": "Month", "type": "temporal"},
+        "y": {"field": "50 Year Yields", "type": "quantitative", "title": "", "axis": {"orient": "left"}},
+        "color": {"datum": "50 Year Yields", "type": "nominal"}
+      }
+    },
+        {
+      "mark": "line",
+      "encoding": {
+        "x": {"field": "Month", "type": "temporal"},
+        "y": {"field": "Gilt Portfolio ETF Price", "type": "quantitative", "axis": {"orient": "left"}},
+        "color": {"datum": "Gilt Portfolio ETF Price", "type": "nominal"}
+      }
+    },
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {"field": "Month", "type": "temporal"},
+        "y": {"field": "Interest Rate Absoutle", "type": "quantitative", "axis": {"orient": "right"}},
+        "color": {"datum": "Interest Rate Absoutle", "type": "nominal"}
+      }
+    }
+  ]
+}
