@@ -3,55 +3,104 @@
   "data": {
     "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/Yields%20and%20Price.csv"
   },
-  "layer": [
+  "concat": [
     {
+      "height": 400,
+      "width": 50,
+      "mark": {"type": "text", "fill": "lightgray"},
+      "params": [
+        {"name": "brush", "select": {"type": "interval", "encodings": ["y"]}}
+      ],
+      "encoding": {
+        "y": {"field": "Month", "type": "temporal", "sort": "x", "title":"Date Range Selector"},
+        "x": {
+          "field": "",
+          "type": "quantitative",
+          "axis": {"tickCount": 0, "grid": false},
+          "title":""
+        }
+      }
+    },
+    {
+  "layer": [
+    { "width":400,
+      "height":400,
       "mark": "line",
       "encoding": {
-        "x": {"field": "Month", "type": "temporal"},
-        "y": {"field": "5 Year Yields", "type": "quantitative", "axis": {"orient": "left"},  "title": ""},
+        "x": {"field": "Month", "type": "temporal", "scale": {"domain": {"param": "brush"}}},
+        "y": {
+          "field": "Yield",
+          "type": "quantitative",
+          "axis": {"orient": "left"},
+          "title": ""
+        },
         "color": {"datum": "5 Year Yields", "type": "nominal"}
-        
       }
     },
     {
       "mark": "line",
       "encoding": {
-        "x": {"field": "Month", "type": "temporal"},
-        "y": {"field": "10 Year Yields", "type": "quantitative", "axis": {"orient": "left"},  "title": ""},
+        "x": {"field": "Month", "type": "temporal","scale": {"domain": {"param": "brush"}}},
+        "y": {
+          "field": "10 Year Yields",
+          "type": "quantitative",
+          "axis": {"orient": "left"},
+          "title": ""
+        },
         "color": {"datum": "10 Year Yields", "type": "nominal"}
       }
     },
     {
       "mark": "line",
       "encoding": {
-        "x": {"field": "Month", "type": "temporal"},
-        "y": {"field": "30 Year Yields", "type": "quantitative", "axis": {"orient": "left"}, "title": ""},
+        "x": {"field": "Month", "type": "temporal","scale": {"domain": {"param": "brush"}}},
+        "y": {
+          "field": "30 Year Yields",
+          "type": "quantitative",
+          "axis": {"orient": "left"},
+          "title": ""
+        },
         "color": {"datum": "30 Year Yields", "type": "nominal"}
       }
     },
     {
       "mark": "line",
       "encoding": {
-        "x": {"field": "Month", "type": "temporal"},
-        "y": {"field": "50 Year Yields", "type": "quantitative", "title": "", "axis": {"orient": "left"}},
+        "x": {"field": "Month", "type": "temporal","scale": {"domain": {"param": "brush"}}},
+        "y": {
+          "field": "50 Year Yields",
+          "type": "quantitative",
+          "title": "",
+          "axis": {"orient": "left"}
+        },
         "color": {"datum": "50 Year Yields", "type": "nominal"}
       }
     },
-        {
+    {
       "mark": "line",
       "encoding": {
-        "x": {"field": "Month", "type": "temporal"},
-        "y": {"field": "Gilt Portfolio ETF Price", "type": "quantitative", "axis": {"orient": "left"}},
+        "x": {"field": "Month", "type": "temporal","scale": {"domain": {"param": "brush"}}},
+        "y": {
+          "field": "Gilt Portfolio ETF Price",
+          "type": "quantitative",
+          "axis": {"orient": "left"}
+        },
         "color": {"datum": "Gilt Portfolio ETF Price", "type": "nominal"}
       }
     },
     {
       "mark": "line",
       "encoding": {
-        "x": {"field": "Month", "type": "temporal"},
-        "y": {"field": "Interest Rate Absoutle", "type": "quantitative", "axis": {"orient": "right"}},
+        "x": {"field": "Month", "type": "temporal","scale": {"domain": {"param": "brush"}}},
+        "y": {
+          "field": "Interest Rate Absoutle",
+          "type": "quantitative",
+          "axis": {"orient": "right"}
+        },
         "color": {"datum": "Interest Rate Absoutle", "type": "nominal"}
       }
     }
+  ]
+  }
   ]
 }
