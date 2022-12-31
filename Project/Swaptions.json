@@ -7,8 +7,6 @@
     "text": "The Future of Interest Rates",
     "subtitle": "Demonstrating what the market perceives UK interest rates to be in 5 years from Nov 2021 to Dec 2022, Source: Investing.com"
   },
-  "height": 300,
-  "width": 300,
   "concat": [
     {
       "height": 400,
@@ -18,11 +16,11 @@
         {"name": "brush", "select": {"type": "interval", "encodings": ["y"]}}
       ],
       "encoding": {
-        "y": {"field": "Date", "type": "temporal", "sort": "-x", "title":"Date Range Selector"},
+        "y": {"field": "Date", "type": "temporal", "sort": "x", "title":"Date Range Selector"},
         "x": {
           "field": "5 Year Swaptions Price",
           "type": "quantitative",
-          "axis": {"tickCount": 0.1, "grid": false},
+          "axis": {"tickCount": 0, "grid": false},
           "title":""
         }
       }
@@ -35,9 +33,10 @@
         "y": {
           "field": "5 Year Swaptions Price",
           "type": "quantitative",
-          "axis": {"title": ""}
+          "axis": {"title": "5 Years Interest Rate Swap"}
         },
-        "x": {"field": "Date", "type": "temporal", "scale": {"domain": {"param": "brush"}}}
+        "x": {"field": "Date", "type": "temporal", "scale": {"domain": {"param": "brush"}}},
+        "color": {"value": "blue"}
         
       }
     }
