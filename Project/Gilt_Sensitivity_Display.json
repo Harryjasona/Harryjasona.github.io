@@ -8,7 +8,7 @@
   },
   "title":{
     "text":"Displaying Debt Instruments Sensitivity To Duration",
-    "subtitle":"Demonstrating how interest rate changes affect bonds of diffrent durations (high yield/coupon = low duration)"
+    "subtitle":"Demonstrating how interest rate changes effect bonds of different durations (high yield/coupon = low duration)"
   },
   "height": 300,
   "width": 300, 
