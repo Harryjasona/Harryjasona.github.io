@@ -7,7 +7,7 @@
   "width": 400,
   "title": {
     "text": "Gilt Prices, Yields and Interest Rates",
-    "subtitle": "A display of the historic relationship between yields, price and interest rates, Source: Yahoo Finance, DMO.go.uk and BOE"
+    "subtitle": "A display of the historic relationship between yields, price and interest rates, Source: Yahoo Finance, DMO.gov.uk and BoE"
   },
   "layer": [
     {
