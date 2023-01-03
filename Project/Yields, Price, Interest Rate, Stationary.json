@@ -80,12 +80,12 @@
       "encoding": {
         "x": {"field": "Month", "type": "temporal"},
         "y": {
-          "field": "Interest Rate Absoutle",
+          "field": "Interest Rate Absolute",
           "type": "quantitative",
           "axis": {"orient": "right"},
           "title":"BoE Interest Rate (%)"
         },
-        "color": {"datum": "Interest Rate Absoutle", "type": "nominal"}
+        "color": {"datum": "Interest Rate Absolute", "type": "nominal"}
       }
     }
   ]
