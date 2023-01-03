@@ -9,19 +9,19 @@
   "data": {
     "values": [
       {
-        "category": "Long Duration Bond 2021 Value",
+        "Category": "Long Duration Bond 2021 Value",
         "value": 1859
       },
       {
-        "category": "Long Duration Bond 2022 Value",
+        "Category": "Long Duration Bond 2022 Value",
         "value": 1168
       },
       {
-        "category": "Short Duration Bond 2021 Value",
+        "Category": "Short Duration Bond 2021 Value",
         "value": 1136
       },
       {
-        "category": "Short Duration Bond 2022 Value",
+        "Category": "Short Duration Bond 2022 Value",
         "value": 665
       }
     ]
@@ -30,7 +30,7 @@
   "height": "400",
   "encoding": {
     "x": {
-      "field": "category",
+      "field": "Category",
       "type": "nominal",
       "axis": {"labelAngle": 45},
       "title": "Short Vs Long Duration Gilts"
@@ -41,7 +41,7 @@
     {
       "mark": "bar",
       "encoding": {
-        "color": {"field": "category"},
+        "color": {"field": "Category"},
         "opacity": {
           "condition": {"selection": "series", "value": 1},
           "value": 0.2
