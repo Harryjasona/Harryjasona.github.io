@@ -45,5 +45,5 @@
       "field": "Interest Rate (%)",
       "type": "quantitative"
     }, "tooltip": [{"field": "properties.name", "title": "Country"},{"field": "Interest Rate (%)",
-        "title": "Intrest Rate Dec 2022"}]}
+        "title": "Intrest Rate Dec 2022 (%)"}]}
 }
