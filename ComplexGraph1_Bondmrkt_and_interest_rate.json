@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Intrest Rates and Bond Market Size Bubble Chart",
+    "text": "Interest Rates and Bond Market Size Bubble Chart",
     "subtitle": [
       "Market size in mln USD, Source: Trading Economics and Cbonds"
     ],
