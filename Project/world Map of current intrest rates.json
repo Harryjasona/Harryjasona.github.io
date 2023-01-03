@@ -8,7 +8,7 @@
   },
   "title": {
     "text": "End of 2022 Global Interest Rates",
-    "subtitle": "A Global Perspective on Interest Rates, Source: Trading Economics, deldersveld ",
+    "subtitle": "A Global Perspective on Interest Rates, Source: Trading Economics, Github - deldersveld ",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
@@ -33,7 +33,7 @@
     "color": {"field": "Interest Rate (%)", "type": "quantitative"},
     "tooltip": [
       {"field": "properties.name", "title": "Country"},
-      {"field": "Interest Rate (%)", "title": "Intrest Rate Dec 2022 (%)"}
+      {"field": "Interest Rate (%)", "title": "Interest Rate Dec 2022 (%)"}
     ]
   }
 }
