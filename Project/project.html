@@ -81,7 +81,7 @@
     </div>
     
     <div>
-    <h1> Chart 7 - The Medias Reaction</h1>
+    <h1> Chart 7 - The Media's Reaction</h1>
     <ul>
     <li> <img alt="My Image" src="Screenshot 2023-01-02 at 15.14.10.png"/></li>
     <li><a href="https://colab.research.google.com/drive/1O4nTw_V7teqfiBoRbLxkMPe61ZRNG3-P?usp=sharing" <button class="button-27" role="button">Web scraping and sentiment analysis notebook</button></a></li>    
@@ -89,7 +89,7 @@
     </div>
 
     <div>
-    <h1> Chart 8 - The Court of Public Opinion</h1>
+    <h1> Chart 8 - The Court of Public Opinion on 'Gilts'</h1>
     <ul>
     <li> <img alt="My Image" src="Screenshot 2023-01-02 at 17.18.11.png"/> <img alt="My Image" src="Sentiment Word Map.png"/> </li>
     <li><a href="https://colab.research.google.com/drive/1DUU9YCvRPLeMK91dnPkxTCxEmjuKIln2?usp=sharing" <button class="button-27" role="button">Twitter Sentiment analysis notebook</button></a></li>   
@@ -98,14 +98,19 @@
 
     <div>    
     <h1> My Data</h1>
+        <p> I have accessed data from many different sources, including reputable online sources, web-scraped and self-synthesised data. I spent time synthesising data to increase the granularity level used in my arguments for Charts 4 and 5. I wanted the reader to see the YoY mathematical drop in my synthetic and indexed Gilts value as interest rates increased and how duration accelerates these losses. My web-scrapped data required me to construct a scrapper for FT article titles given a date range and search term (Gilts) while looping over web pages. After finding the HTML tags needed, I collated data on titles over the months and conducted a sentiment analysis on each month’s titles, plotting this with MoM yield changes, including an OLS line of best fit. The choropleth required me to decode a topojson file, pulling in the data points and pairing the map with interest rate data while manually editing the CSV dataset. I also gained academic access to the Twitter API and using my API keys, I pulled in and cleaned hundreds of tweets. Using Textblob, an iteration of the NLTK library, I performed a sentiment analysis on the tweets, gathering the public sentiment on the key phrase Gilts.
+</p>
     </div>
 
     <div>    
     <h1> Data Cleaning and Analysis</h1>
     </div>
-
+<p> I faced many challenges when constructing my data sets due to the ambitious types of analysis and data I chose. Once I learned how to access the Twitter API, I had to research how to clean and process text in python. I wrote functions and loops to remove stop words and unwanted characters, getting the text in a readable format. This was all unfamiliar to me, and it required a lot of research on the Textblob/NLTK libraries. This process was a steep learning curve and required me to tap into online resources. When creating my charts with synthesised data, I planned the steps I would have to follow on paper, building up the code I would need to implement. This resulted in me creating guided reader-friendly notebooks. I also chose to add layers of interactivity that went beyond the lectures. I dove into online threads and discussion boards about vega and drew inspiration from these resources to find new interaction methods. I successfully implemented them after trials and errors and many failed specifications. For more details on these processes, please explore the annotated notebooks and interactive graphs I have provided under the relevant charts.
+</p>
     <div>    
     <h1> Conclusion</h1>
+        <p>I have demonstrated the effects of interest rates on the value of Gilts and how these effects are mathematically magnified as the duration of Gilts increases (Charts 1, 4, 5). I demonstrated where interest rates, bond value and yields are currently (Chart 2), along with the bond market capitalisation of different economies. Linking this to my UK swaptions graph (Chart 6), the GBP interest rate swaps market believes the UK interest rate will continue to rise over the next five years to approx 4%, indicating an expected further drop in the value of Gilts (assuming the BoE doesn’t change there current positioning and this isn’t already priced in). I also observed that, on average, as yields increased (meaning gilt prices decreased), the news sentiment around Gilts increased, which is a surprising relationship considering the value destruction of Gilts and its consequences. To further explore this study, I would want to increase the scope of my research, expanding my web scrapper to include new titles from other outlets like Reuters and Bloomberg to build a more robust data set. However, with the data presented, I hope the reader can see the importance of interest rate risk and its potential effects.
+</p>
      </div>
             
 </body>
