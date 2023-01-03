@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/GBPIRSB5Y%3D%20Overview.csv"},
   "repeat": {
-    "layer": ["5 Year Swaptions Price", "5 Year Gilt Yeilds", "Swaptions Premium "]
+    "layer": ["5 Year Swaptions Price", "5 Year Gilt Yields", "Swaptions Premium "]
   },
   "title":{
     "text":"The Future of Interest Rates",
@@ -16,7 +16,7 @@
     "encoding": {
       "x": {
         "field": "Date",
-        "title":"Intrest Rate (%)",
+        "title":"Interest Rate (%)",
         "type": "temporal"
       },
       "y": {
