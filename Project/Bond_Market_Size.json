@@ -1,8 +1,8 @@
 {
-"title": {
-    "text": "Intrest Rates and Bond Market Size",
+  "title": {
+    "text": "Interest Rates and Bond Market Size",
     "subtitle": [
-      "Market Size  in Mln USD, Source: Trading Economics and Cbonds"
+      "Market Size in Mln USD, Source: Trading Economics and Cbonds"
     ],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
@@ -11,89 +11,49 @@
   },
   "data": {
     "values": [
- {
-   "Country": "Japan",
-   "Bond_Markey_Value_USD": 10205311
- },
- {
-   "Country": "Switzerland",
-   "Bond_Markey_Value_USD": 878210
- },
- {
-   "Country": "Singapore",
-   "Bond_Markey_Value_USD": 523877
- },
- {
-   "Country": "South Africa",
-   "Bond_Markey_Value_USD": 266754
- },
- {
-   "Country": "Australia",
-   "Bond_Markey_Value_USD": 1437561
- },
- {
-   "Country": "South Korea",
-   "Bond_Markey_Value_USD": 266754
- },
- {
-   "Country": "China",
-   "Bond_Markey_Value_USD": 15862302
- },
- {
-   "Country": "Canada",
-   "Bond_Markey_Value_USD": 2932032
- },
- {
-   "Country": "United States",
-   "Bond_Markey_Value_USD": 42060575
- },
- {
-   "Country": "Saudi Arabia",
-   "Bond_Markey_Value_USD": 348052
- },
- {
-   "Country": "Indonesia",
-   "Bond_Markey_Value_USD": 514050
- },
- {
-   "Country": "India",
-   "Bond_Markey_Value_USD": 6204642
- },
- {
-   "Country": "United Kingdom",
-   "Bond_Markey_Value_USD": 4745143
- },
- {
-   "Country": "Russia",
-   "Bond_Markey_Value_USD": 724076
- },
- {
-   "Country": "Mexico",
-   "Bond_Markey_Value_USD": 740664
- },
- {
-   "Country": "Turkey",
-   "Bond_Markey_Value_USD": 214840
- },
- {
-   "Country": "Brazil",
-   "Bond_Markey_Value_USD": 747379
- }
-]
-},
+      {"Country": "Japan", "Bond_Markey_Value_USD": 10205311},
+      {"Country": "Switzerland", "Bond_Markey_Value_USD": 878210},
+      {"Country": "Singapore", "Bond_Markey_Value_USD": 523877},
+      {"Country": "South Africa", "Bond_Markey_Value_USD": 266754},
+      {"Country": "Australia", "Bond_Markey_Value_USD": 1437561},
+      {"Country": "South Korea", "Bond_Markey_Value_USD": 266754},
+      {"Country": "China", "Bond_Markey_Value_USD": 15862302},
+      {"Country": "Canada", "Bond_Markey_Value_USD": 2932032},
+      {"Country": "United States", "Bond_Markey_Value_USD": 42060575},
+      {"Country": "Saudi Arabia", "Bond_Markey_Value_USD": 348052},
+      {"Country": "Indonesia", "Bond_Markey_Value_USD": 514050},
+      {"Country": "India", "Bond_Markey_Value_USD": 6204642},
+      {"Country": "United Kingdom", "Bond_Markey_Value_USD": 4745143},
+      {"Country": "Russia", "Bond_Markey_Value_USD": 724076},
+      {"Country": "Mexico", "Bond_Markey_Value_USD": 740664},
+      {"Country": "Turkey", "Bond_Markey_Value_USD": 214840},
+      {"Country": "Brazil", "Bond_Markey_Value_USD": 747379}
+    ]
+  },
   "width": "600",
   "height": "400",
   "encoding": {
-    "x": {"field": "Country", "type": "nominal", "axis": {"labelAngle": 45},
-      "title": "G20 Countries"},
-    "y": {"field": "Bond_Markey_Value_USD", "type": "quantitative","title": "Market Size in Millions of UDS"}
+    "x": {
+      "field": "Country",
+      "type": "nominal",
+      "axis": {"labelAngle": 45},
+      "title": "G20 Countries"
+    },
+    "y": {
+      "field": "Bond_Markey_Value_USD",
+      "type": "quantitative",
+      "title": "Bond Market Size in Millions of UDS"
+    }
   },
   "layer": [
     {
       "mark": "bar",
       "encoding": {
         "color": {"field": "Country"},
-        "tooltip": {"field": "Bond_Markey_Value_USD", "title": "Mrket Value Mln USD"},
+        "tooltip": {
+          "field": "Bond_Markey_Value_USD",
+          "title": "Mrket Value Mln USD"
+        },
         "opacity": {
           "condition": {"selection": "series", "value": 1},
           "value": 0.2
