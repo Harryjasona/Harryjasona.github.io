@@ -1,42 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 body {
   width: 100%; /* Instead of 1200px */
   margin: 0 auto;
   background-color: #122b39;
-  padding: 5% 5% 5% 5%;
+  padding: 0 20% 0; /* Instead of 0 20px */
   border: 5px solid rgb(255, 255, 255);
   text-align: center;
 }
-h1, h3{
-    color:rgb(255, 255, 255);
-    font-family: Arial;
-    text-align: center;
-    background-image: linear-gradient(
-        -45deg, 
-       rgba(59, 174, 227, 0.418) 0%, 
-       rgba(87, 111, 230, 0.308) 25%, 
-       rgba(152, 68, 183, 0.295) 51%, 
-       rgba(255, 53, 127, 0.247) 100%)
+
+h1, h3 {
+  color: rgb(255, 255, 255);
+  font-family: Arial;
+  text-align: center;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(59, 174, 227, 0.418) 0%,
+    rgba(87, 111, 230, 0.308) 25%,
+    rgba(152, 68, 183, 0.295) 51%,
+    rgba(255, 53, 127, 0.247) 100%
+  );
 }
 
-p{
-    color:rgb(255, 255, 255);
-    font-family: Arial;
-    text-align: center;
+p {
+  color: rgb(255, 255, 255);
+  font-family: Arial;
+  text-align: center;
+  font-size: 1.2em; /* Instead of 16px */
 }
-p1{
-    color:rgb(255, 255, 255);
-    font-family: Arial;
-    text-align: center;
-    font-size: 20px;
-    
+
+p1 {
+  color: rgb(255, 255, 255);
+  font-family: Arial;
+  text-align: center;
+  font-size: 1.5rem; /* Instead of 20px */
 }
 
 li {
-    color:#122b39;
-    font-family: Arial;
-    text-align: center;
+  color: #122b39;
+  font-family: Arial;
+  text-align: center;
 }
+
 ul {
     color: #ffffff;
 }
