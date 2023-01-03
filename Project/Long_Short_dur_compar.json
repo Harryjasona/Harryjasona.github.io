@@ -33,7 +33,7 @@
       "field": "Category",
       "type": "nominal",
       "axis": {"labelAngle": 45},
-      "title": "Short Vs Long Duration Gilts"
+      "title": "Short vs Long Duration Gilts"
     },
     "y": {"field": "value", "type": "quantitative", "title": "Value (£)"}
   },
