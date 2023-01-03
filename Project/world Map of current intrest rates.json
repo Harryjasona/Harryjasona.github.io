@@ -25,7 +25,7 @@
           "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/intrest_rate_bu_country.csv"
         },
         "key": "Country",
-        "fields": ["Last"]
+        "fields": ["Interest Rate"]
       }
     }
   ],
@@ -42,8 +42,8 @@
     "strokeWidth":0.1},
   
   "encoding": {"color": {
-      "field": "Last",
+      "field": "Interest Rate",
       "type": "quantitative"
-    }, "tooltip": [{"field": "properties.name", "title": "Country"},{"field": "Last",
+    }, "tooltip": [{"field": "properties.name", "title": "Country"},{"field": "Interest Rate",
         "title": "Intrest Rate Dec 2022"}]}
 }
