@@ -4,20 +4,17 @@
   "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json",
-    "format": {
-          "type": "topojson",
-          "feature": "countries1"}
+    "format": {"type": "topojson", "feature": "countries1"}
   },
   "title": {
-      "text": "End of 2022 Global Interest Rates",
-      "subtitle": "A Global Persepctive on Interest Rates, Source: Trading Economics, deldersveld ",
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 10,
-      "anchor": "start",
-      "color": "black"
-    },
-
-   "transform": [
+    "text": "End of 2022 Global Interest Rates",
+    "subtitle": "A Global Persepctive on Interest Rates, Source: Trading Economics, deldersveld ",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "transform": [
     {
       "lookup": "properties.name",
       "from": {
@@ -29,21 +26,14 @@
       }
     }
   ],
-  "projection": {
-    "type": "naturalEarth1"},
-    
-  "config": {
-  "background":"white",
-  "view": {"stroke": "transparent"}},
-
-  "mark": {
-    "type": "geoshape",
-    "stroke": "black",
-    "strokeWidth":0.1},
-  
-  "encoding": {"color": {
-      "field": "Interest Rate (%)",
-      "type": "quantitative"
-    }, "tooltip": [{"field": "properties.name", "title": "Country"},{"field": "Interest Rate (%)",
-        "title": "Intrest Rate Dec 2022 (%)"}]}
+  "projection": {"type": "naturalEarth1"},
+  "config": {"background": "white", "view": {"stroke": "transparent"}},
+  "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.1},
+  "encoding": {
+    "color": {"field": "Interest Rate (%)", "type": "quantitative"},
+    "tooltip": [
+      {"field": "properties.name", "title": "Country"},
+      {"field": "Interest Rate (%)", "title": "Intrest Rate Dec 2022 (%)"}
+    ]
+  }
 }
