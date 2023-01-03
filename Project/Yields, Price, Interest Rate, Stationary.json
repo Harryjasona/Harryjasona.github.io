@@ -3,27 +3,36 @@
   "data": {
     "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/Yields%20and%20Price.csv"
   },
-  "height":400,
-  "width":400,
+  "height": 400,
+  "width": 400,
   "title": {
     "text": "Gilt Prices, Yields and Interest Rates",
     "subtitle": "A display of the historic relationship between yields, price and interest rates, Source: Yahoo Finance, DMO.go.uk and BOE"
   },
   "layer": [
-    { 
+    {
       "mark": "line",
       "encoding": {
         "x": {"field": "Month", "type": "temporal"},
-        "y": {"field": "5 Year Yields", "type": "quantitative", "axis": {"orient": "left"},  "title": ""},
+        "y": {
+          "field": "5 Year Yields",
+          "type": "quantitative",
+          "axis": {"orient": "left"},
+          "title": ""
+        },
         "color": {"datum": "5 Year Yields", "type": "nominal"}
-        
       }
     },
     {
       "mark": "line",
       "encoding": {
         "x": {"field": "Month", "type": "temporal"},
-        "y": {"field": "10 Year Yields", "type": "quantitative", "axis": {"orient": "left"},  "title": ""},
+        "y": {
+          "field": "10 Year Yields",
+          "type": "quantitative",
+          "axis": {"orient": "left"},
+          "title": ""
+        },
         "color": {"datum": "10 Year Yields", "type": "nominal"}
       }
     },
@@ -31,7 +40,12 @@
       "mark": "line",
       "encoding": {
         "x": {"field": "Month", "type": "temporal"},
-        "y": {"field": "30 Year Yields", "type": "quantitative", "axis": {"orient": "left"}, "title": ""},
+        "y": {
+          "field": "30 Year Yields",
+          "type": "quantitative",
+          "axis": {"orient": "left"},
+          "title": ""
+        },
         "color": {"datum": "30 Year Yields", "type": "nominal"}
       }
     },
@@ -39,15 +53,25 @@
       "mark": "line",
       "encoding": {
         "x": {"field": "Month", "type": "temporal"},
-        "y": {"field": "50 Year Yields", "type": "quantitative", "title": "", "axis": {"orient": "left"}},
+        "y": {
+          "field": "50 Year Yields",
+          "type": "quantitative",
+          "title": "",
+          "axis": {"orient": "left"}
+        },
         "color": {"datum": "50 Year Yields", "type": "nominal"}
       }
     },
-        {
+    {
       "mark": "line",
       "encoding": {
         "x": {"field": "Month", "type": "temporal"},
-        "y": {"field": "Gilt Portfolio ETF Price", "type": "quantitative", "axis": {"orient": "left"}},
+        "y": {
+          "field": "Gilt Portfolio ETF Price",
+          "type": "quantitative",
+          "axis": {"orient": "left"},
+          "title":"Gilt Portfolio ETF Price (£), Yields (%)"
+        },
         "color": {"datum": "Gilt Portfolio ETF Price", "type": "nominal"}
       }
     },
@@ -55,7 +79,12 @@
       "mark": "line",
       "encoding": {
         "x": {"field": "Month", "type": "temporal"},
-        "y": {"field": "Interest Rate Absoutle", "type": "quantitative", "axis": {"orient": "right"}},
+        "y": {
+          "field": "Interest Rate Absoutle",
+          "type": "quantitative",
+          "axis": {"orient": "right"},
+          "title":"BoE Interest Rate (%)"
+        },
         "color": {"datum": "Interest Rate Absoutle", "type": "nominal"}
       }
     }
