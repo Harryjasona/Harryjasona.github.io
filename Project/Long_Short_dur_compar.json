@@ -1,29 +1,17 @@
 {
   "title": {
     "text": "Wealth Destruction From Rising Interest Rates",
-    "subtitle": "Long duration gilts fell in value a further 4.3% than shorter duration gilts, interactive legend ",
+    "subtitle": "Synthetic gilt valuations derived using DCF models with risk free rates during 2021 and 2022, Long duration gilts fell in value a further 4.3% than shorter duration gilts, interactive legend ",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "color": "black"
   },
   "data": {
     "values": [
-      {
-        "Category": "Long Duration Bond 2021 Value",
-        "value": 1859
-      },
-      {
-        "Category": "Long Duration Bond 2022 Value",
-        "value": 1168
-      },
-      {
-        "Category": "Short Duration Bond 2021 Value",
-        "value": 1136
-      },
-      {
-        "Category": "Short Duration Bond 2022 Value",
-        "value": 665
-      }
+      {"Category": "Long Duration Bond 2021 Value", "value": 1859},
+      {"Category": "Long Duration Bond 2022 Value", "value": 1168},
+      {"Category": "Short Duration Bond 2021 Value", "value": 1136},
+      {"Category": "Short Duration Bond 2022 Value", "value": 665}
     ]
   },
   "width": "600",
