@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/Yields%20and%20Price.csv"
   },
-   "height": 400,
+  "height": 400,
   "width": 400,
   "title": {
     "text": "Gilt Prices, Yields and Interest Rates",
@@ -18,95 +18,127 @@
         {"name": "brush", "select": {"type": "interval", "encodings": ["y"]}}
       ],
       "encoding": {
-        "y": {"field": "Month", "type": "temporal", "sort": "x", "title":"Date Range Selector"},
+        "y": {
+          "field": "Month",
+          "type": "temporal",
+          "sort": "x",
+          "title": "Date Range Selector"
+        },
         "x": {
           "field": "",
           "type": "quantitative",
           "axis": {"tickCount": 0, "grid": false},
-          "title":""
+          "title": ""
         }
       }
     },
     {
-  "layer": [
-    { "width":400,
-      "height":400,
-      "mark": "line",
-      "encoding": {
-        "x": {"field": "Month", "type": "temporal", "scale": {"domain": {"param": "brush"}}},
-        "y": {
-          "field": "Yield",
-          "type": "quantitative",
-          "axis": {"orient": "left"},
-          "title": ""
+      "layer": [
+        {
+          "width": 400,
+          "height": 400,
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "Month",
+              "type": "temporal",
+              "scale": {"domain": {"param": "brush"}}
+            },
+            "y": {
+              "field": "Yield",
+              "type": "quantitative",
+              "axis": {"orient": "left"},
+              "title": ""
+            },
+            "color": {"datum": "5 Year Yields", "type": "nominal"}
+          }
         },
-        "color": {"datum": "5 Year Yields", "type": "nominal"}
-      }
-    },
-    {
-      "mark": "line",
-      "encoding": {
-        "x": {"field": "Month", "type": "temporal","scale": {"domain": {"param": "brush"}}},
-        "y": {
-          "field": "10 Year Yields",
-          "type": "quantitative",
-          "axis": {"orient": "left"},
-          "title": ""
+        {
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "Month",
+              "type": "temporal",
+              "scale": {"domain": {"param": "brush"}}
+            },
+            "y": {
+              "field": "10 Year Yields",
+              "type": "quantitative",
+              "axis": {"orient": "left"},
+              "title": ""
+            },
+            "color": {"datum": "10 Year Yields", "type": "nominal"}
+          }
         },
-        "color": {"datum": "10 Year Yields", "type": "nominal"}
-      }
-    },
-    {
-      "mark": "line",
-      "encoding": {
-        "x": {"field": "Month", "type": "temporal","scale": {"domain": {"param": "brush"}}},
-        "y": {
-          "field": "30 Year Yields",
-          "type": "quantitative",
-          "axis": {"orient": "left"},
-          "title": ""
+        {
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "Month",
+              "type": "temporal",
+              "scale": {"domain": {"param": "brush"}}
+            },
+            "y": {
+              "field": "30 Year Yields",
+              "type": "quantitative",
+              "axis": {"orient": "left"},
+              "title": ""
+            },
+            "color": {"datum": "30 Year Yields", "type": "nominal"}
+          }
         },
-        "color": {"datum": "30 Year Yields", "type": "nominal"}
-      }
-    },
-    {
-      "mark": "line",
-      "encoding": {
-        "x": {"field": "Month", "type": "temporal","scale": {"domain": {"param": "brush"}}},
-        "y": {
-          "field": "50 Year Yields",
-          "type": "quantitative",
-          "title": "",
-          "axis": {"orient": "left"}
+        {
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "Month",
+              "type": "temporal",
+              "scale": {"domain": {"param": "brush"}}
+            },
+            "y": {
+              "field": "50 Year Yields",
+              "type": "quantitative",
+              "title": "",
+              "axis": {"orient": "left"}
+            },
+            "color": {"datum": "50 Year Yields", "type": "nominal"}
+          }
         },
-        "color": {"datum": "50 Year Yields", "type": "nominal"}
-      }
-    },
-    {
-      "mark": "line",
-      "encoding": {
-        "x": {"field": "Month", "type": "temporal","scale": {"domain": {"param": "brush"}}},
-        "y": {
-          "field": "Gilt Portfolio ETF Price",
-          "type": "quantitative",
-          "axis": {"orient": "left"}
+        {
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "Month",
+              "type": "temporal",
+              "scale": {"domain": {"param": "brush"}}
+            },
+            "y": {
+              "field": "Gilt Portfolio ETF Price",
+              "type": "quantitative",
+              "axis": {"orient": "left"},
+              "title":"Gilt Portfolio ETF Price (£), Yields (%)"
+            },
+            "color": {"datum": "Gilt Portfolio ETF Price", "type": "nominal"}
+          }
         },
-        "color": {"datum": "Gilt Portfolio ETF Price", "type": "nominal"}
-      }
-    },
-    {
-      "mark": "line",
-      "encoding": {
-        "x": {"field": "Month", "type": "temporal","scale": {"domain": {"param": "brush"}}},
-        "y": {
-          "field": "Interest Rate Absoutle",
-          "type": "quantitative",
-          "axis": {"orient": "right"}
-        },
-        "color": {"datum": "Interest Rate Absoutle", "type": "nominal"}
-      }
+        {
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "Month",
+              "type": "temporal",
+              "scale": {"domain": {"param": "brush"}}
+            },
+            "y": {
+              "field": "Interest Rate Percent",
+              "type": "quantitative",
+              "axis": {"orient": "right"},
+              "title":"Interest Rate (%)"
+            },
+            "color": {"datum": "Interest Rate Percent", "type": "nominal"}
+          }
+        }
+      ]
     }
-  ]
-  }
   ]
 }
