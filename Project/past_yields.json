@@ -4,7 +4,11 @@
     "url": "https://raw.githubusercontent.com/Harryjasona/Harryjasona.github.io/main/Project/Yields%20and%20Price.csv"
   },
    "height": 400,
-   "width": 50,
+  "width": 400,
+  "title": {
+    "text": "Gilt Prices, Yields and Interest Rates",
+    "subtitle": "A display of the historic relationship between yields, price and interest rates, Source: Yahoo Finance, DMO.gov.uk and BoE"
+  },
   "hconcat": [
     {
       "height": 400,
